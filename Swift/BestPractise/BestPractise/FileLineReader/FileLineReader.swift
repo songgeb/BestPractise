@@ -62,13 +62,23 @@ class FileLineReader: NSObject, StreamDelegate {
             restData = data;
             break
           }
-          let lineData = data.subdata(in: Range(data.startIndex..<range.upperBound))
+          let lineData = data.subdata(in: Range(data.startIndex..<range.lowerBound))
           let str = String(data: lineData, encoding: .utf8)
           lineNum += 1
           lineBlock?(lineNum, str!)
           let restRange = Range(range.upperBound..<data.endIndex)
           data = data.subdata(in: restRange)
         }
+      } else if result == 0 {
+        //文档结束
+        if let tmp = restData, tmp.count > 0 {
+          let str = String(data: tmp, encoding: .utf8)
+          lineNum += 1
+          lineBlock?(lineNum, str!)
+        }
+      } else {
+        print("read buffer error!")
+        fatalError()
       }
     case .hasSpaceAvailable:fallthrough
     case .openCompleted: fallthrough

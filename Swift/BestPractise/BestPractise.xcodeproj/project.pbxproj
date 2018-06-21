@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC169EE920DB75050077D48A /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC169EE820DB75050077D48A /* test.txt */; };
 		CC2F1DE320C12920005BD750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DE220C12920005BD750 /* AppDelegate.swift */; };
 		CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DE420C12921005BD750 /* ViewController.swift */; };
 		CC2F1DE820C12921005BD750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DE620C12921005BD750 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC169EE820DB75050077D48A /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		CC2F1DDF20C12920005BD750 /* BestPractise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestPractise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2F1DE220C12920005BD750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2F1DE420C12921005BD750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				CC2F1DF920C12B99005BD750 /* BigFile.txt */,
 				CC2F1DF520C1294D005BD750 /* FileLineReader.swift */,
+				CC169EE820DB75050077D48A /* test.txt */,
 			);
 			path = FileLineReader;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				CC2F1DEA20C12923005BD750 /* Assets.xcassets in Resources */,
 				CC2F1DE820C12921005BD750 /* Main.storyboard in Resources */,
 				CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */,
+				CC169EE920DB75050077D48A /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
