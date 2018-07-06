@@ -15,6 +15,7 @@
 		CC2F1DED20C12923005BD750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DEB20C12923005BD750 /* LaunchScreen.storyboard */; };
 		CC2F1DF620C1294D005BD750 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DF520C1294D005BD750 /* FileLineReader.swift */; };
 		CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DF920C12B99005BD750 /* BigFile.txt */; };
+		CCE0F0EF20EF7BA100BF2641 /* RemoveDup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC2F1DEE20C12923005BD750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2F1DF520C1294D005BD750 /* FileLineReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLineReader.swift; sourceTree = "<group>"; };
 		CC2F1DF920C12B99005BD750 /* BigFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigFile.txt; sourceTree = "<group>"; };
+		CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveDup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CC2F1DF920C12B99005BD750 /* BigFile.txt */,
+				CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */,
 				CC2F1DF520C1294D005BD750 /* FileLineReader.swift */,
 				CC169EE820DB75050077D48A /* test.txt */,
 			);
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2F1DF620C1294D005BD750 /* FileLineReader.swift in Sources */,
+				CCE0F0EF20EF7BA100BF2641 /* RemoveDup.swift in Sources */,
 				CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */,
 				CC2F1DE320C12920005BD750 /* AppDelegate.swift in Sources */,
 			);
