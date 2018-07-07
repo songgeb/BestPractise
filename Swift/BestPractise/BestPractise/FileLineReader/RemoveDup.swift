@@ -12,7 +12,7 @@ import UIKit
 //可同时传入多个文件, 当多个文件出现重复的内容时，重复内容仅会保留一份，且最终结果中，该重复的内容会仅保留在第一次出现该内容的文件中
 class RemoveDup: NSObject {
   private var files: [URL]
-  private var reader: SBReader?
+  private var reader: FileLineReader?
   private var currentDataSet: Set<String>
   
   init(files: [URL]) {
@@ -29,7 +29,7 @@ class RemoveDup: NSObject {
     var tmpDataSet = Set<String>()
     var fileURL = files.first!
     print("开始任务列表, \(fileURL.lastPathComponent)")
-    reader = SBReader(fileURL: fileURL)
+    reader = FileLineReader(fileURL: fileURL)
     reader?.readLine(perLine: { (col, content) in
       tmpDataSet.insert(content)
     }, completion: {
