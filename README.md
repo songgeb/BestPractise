@@ -24,3 +24,7 @@ fileLineReader.readLine(perLine: { (lineNumber, content) in
 2. 要求每个输入文件中的内容按行排列
 3. 可同时传入多个文件, 当多个文件出现重复的内容时，重复内容仅会保留一份，且最终结果中，该重复的内容会仅保留在第一次出现该内容的文件中
 
+
+### sb_isTransparent
+
+是`UIImage`的`Extension`，判断图片是否是全透明
