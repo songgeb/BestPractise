@@ -28,3 +28,7 @@ fileLineReader.readLine(perLine: { (lineNumber, content) in
 ### sb_isTransparent
 
 是`UIImage`的`Extension`，判断图片是否是全透明
+
+### isNewVersionUser()
+
+判断是否是新版本新安装的用户，而不是升级上来的用户。且从当前新安装app后，直到更新新版本该方法都返回true
