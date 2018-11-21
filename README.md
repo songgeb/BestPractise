@@ -1,6 +1,11 @@
 # BestPractise
 iOS helper代码
 
+### DynamicCellViewController
+使用Autolayout实现动态`UICollectionViewCell`高度
+
+理论部分参考[UICollectionViewFlowLayout下使用Autolayout实现动态cell高度](https://songgeb.github.io/2018/11/19/UICollectionViewFlowLayout%E4%B8%8B%E4%BD%BF%E7%94%A8Autolayout%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81cell%E9%AB%98%E5%BA%A6/)
+
 ### FileLineReader
 
 按行读文件，适合读取大文件，代码中有测试例子
