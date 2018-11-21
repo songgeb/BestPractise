@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var fileLineReader: FileLineReader?
-    private var dataModels = ["FilelineReader", "RemoveDump", "ImageTransparent", "AppVersion", "DynamicCollectionViewCell"]
+    private var dataModels = ["FilelineReader", "RemoveDump", "ImageTransparent", "AppVersion", "DynamicCollectionViewCell-Programing", "DynamicCollectionViewCell-Storyboard"]
 }
 
 extension ViewController: UITableViewDataSource {
@@ -46,7 +46,9 @@ extension ViewController: UITableViewDelegate {
             //app version
             appversion()
         } else if dataIndex == 4 {
-            gotoDynamicCollectionViewTest()
+            gotoDynamicCollectionViewTest(false)
+        } else if dataIndex == 5 {
+            gotoDynamicCollectionViewTest(true)
         }
     }
 }
@@ -77,10 +79,13 @@ extension ViewController {
         print(Appversion.isNewVersionUser())
     }
     
-    private func gotoDynamicCollectionViewTest() {
-//        performSegue(withIdentifier: "dynamiccell", sender: self)
-        let vc = DynamicCellViewController()
-        navigationController?.pushViewController(vc, animated: true)
+    private func gotoDynamicCollectionViewTest(_ storyboard: Bool) {
+        if storyboard {
+            performSegue(withIdentifier: "dynamiccell", sender: self)
+        } else {
+            let vc = DyCollectionCellProgramingVC()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

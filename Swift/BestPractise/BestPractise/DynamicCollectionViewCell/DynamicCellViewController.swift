@@ -12,25 +12,15 @@ private let reuseIdentifier = "CollectionViewCell"
 
 class DynamicCellViewController: UIViewController {
 
-    private var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 150, height:11)
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
+    //collectionview is not ready before loadView, such as awakeFromNib(), so apple document of awakeFromNib() is wrong
+    override func loadView() {
+        super.loadView()
+        //must not use cell in storyboard, or you will encounter constraint warning
         collectionView.register(DynamicCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        collectionView.dataSource = self
-        
-        view.addSubview(collectionView)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint(item: collectionView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .bottom, relatedBy: .equal, toItem: self.bottomLayoutGuide, attribute: .top, multiplier: 1, constant: 0).isActive = true
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.estimatedItemSize = CGSize(width: 150, height:11)
     }
 }
 

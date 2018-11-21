@@ -16,6 +16,7 @@
 		CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DF920C12B99005BD750 /* BigFile.txt */; };
 		CC55885721A50FC30011D099 /* DynamicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885621A50FC30011D099 /* DynamicCellViewController.swift */; };
 		CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */; };
+		CC55885B21A537FA0011D099 /* DyCollectionCellProgramingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885A21A537FA0011D099 /* DyCollectionCellProgramingVC.swift */; };
 		CCA7AEB8215DDC6E00BE323B /* Appversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7AEB7215DDC6E00BE323B /* Appversion.swift */; };
 		CCDA98FB211346430093EABD /* ImageTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA98FA211346430093EABD /* ImageTransparent.swift */; };
 		CCE0F0EF20EF7BA100BF2641 /* RemoveDup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */; };
@@ -33,6 +34,7 @@
 		CC2F1DF920C12B99005BD750 /* BigFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigFile.txt; sourceTree = "<group>"; };
 		CC55885621A50FC30011D099 /* DynamicCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellViewController.swift; sourceTree = "<group>"; };
 		CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC55885A21A537FA0011D099 /* DyCollectionCellProgramingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyCollectionCellProgramingVC.swift; sourceTree = "<group>"; };
 		CCA7AEB7215DDC6E00BE323B /* Appversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appversion.swift; sourceTree = "<group>"; };
 		CCDA98FA211346430093EABD /* ImageTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransparent.swift; sourceTree = "<group>"; };
 		CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveDup.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				CC55885621A50FC30011D099 /* DynamicCellViewController.swift */,
 				CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */,
+				CC55885A21A537FA0011D099 /* DyCollectionCellProgramingVC.swift */,
 			);
 			path = DynamicCollectionViewCell;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				CC55885721A50FC30011D099 /* DynamicCellViewController.swift in Sources */,
 				CCDA98FB211346430093EABD /* ImageTransparent.swift in Sources */,
 				CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */,
+				CC55885B21A537FA0011D099 /* DyCollectionCellProgramingVC.swift in Sources */,
 				CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */,
 				CC2F1DE320C12920005BD750 /* AppDelegate.swift in Sources */,
 			);
