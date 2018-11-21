@@ -12,9 +12,10 @@
 		CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DE420C12921005BD750 /* ViewController.swift */; };
 		CC2F1DE820C12921005BD750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DE620C12921005BD750 /* Main.storyboard */; };
 		CC2F1DEA20C12923005BD750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DE920C12923005BD750 /* Assets.xcassets */; };
-		CC2F1DED20C12923005BD750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DEB20C12923005BD750 /* LaunchScreen.storyboard */; };
 		CC2F1DF620C1294D005BD750 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DF520C1294D005BD750 /* FileLineReader.swift */; };
 		CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DF920C12B99005BD750 /* BigFile.txt */; };
+		CC55885721A50FC30011D099 /* DynamicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885621A50FC30011D099 /* DynamicCellViewController.swift */; };
+		CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */; };
 		CCA7AEB8215DDC6E00BE323B /* Appversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7AEB7215DDC6E00BE323B /* Appversion.swift */; };
 		CCDA98FB211346430093EABD /* ImageTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA98FA211346430093EABD /* ImageTransparent.swift */; };
 		CCE0F0EF20EF7BA100BF2641 /* RemoveDup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */; };
@@ -27,10 +28,11 @@
 		CC2F1DE420C12921005BD750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC2F1DE720C12921005BD750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC2F1DE920C12923005BD750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CC2F1DEC20C12923005BD750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC2F1DEE20C12923005BD750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2F1DF520C1294D005BD750 /* FileLineReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLineReader.swift; sourceTree = "<group>"; };
 		CC2F1DF920C12B99005BD750 /* BigFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigFile.txt; sourceTree = "<group>"; };
+		CC55885621A50FC30011D099 /* DynamicCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellViewController.swift; sourceTree = "<group>"; };
+		CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
 		CCA7AEB7215DDC6E00BE323B /* Appversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appversion.swift; sourceTree = "<group>"; };
 		CCDA98FA211346430093EABD /* ImageTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransparent.swift; sourceTree = "<group>"; };
 		CCE0F0EE20EF7BA100BF2641 /* RemoveDup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveDup.swift; sourceTree = "<group>"; };
@@ -66,15 +68,15 @@
 		CC2F1DE120C12920005BD750 /* BestPractise */ = {
 			isa = PBXGroup;
 			children = (
+				CC55885521A50A270011D099 /* DynamicCollectionViewCell */,
+				CC55885421A50A090011D099 /* AppVersion */,
 				CCDA98F92113461C0093EABD /* ImageProcessing */,
 				CC2F1DF420C12929005BD750 /* FileLineReader */,
 				CC2F1DE220C12920005BD750 /* AppDelegate.swift */,
 				CC2F1DE420C12921005BD750 /* ViewController.swift */,
 				CC2F1DE620C12921005BD750 /* Main.storyboard */,
 				CC2F1DE920C12923005BD750 /* Assets.xcassets */,
-				CC2F1DEB20C12923005BD750 /* LaunchScreen.storyboard */,
 				CC2F1DEE20C12923005BD750 /* Info.plist */,
-				CCA7AEB7215DDC6E00BE323B /* Appversion.swift */,
 			);
 			path = BestPractise;
 			sourceTree = "<group>";
@@ -88,6 +90,23 @@
 				CC169EE820DB75050077D48A /* test.txt */,
 			);
 			path = FileLineReader;
+			sourceTree = "<group>";
+		};
+		CC55885421A50A090011D099 /* AppVersion */ = {
+			isa = PBXGroup;
+			children = (
+				CCA7AEB7215DDC6E00BE323B /* Appversion.swift */,
+			);
+			path = AppVersion;
+			sourceTree = "<group>";
+		};
+		CC55885521A50A270011D099 /* DynamicCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC55885621A50FC30011D099 /* DynamicCellViewController.swift */,
+				CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */,
+			);
+			path = DynamicCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		CCDA98F92113461C0093EABD /* ImageProcessing */ = {
@@ -130,6 +149,7 @@
 				TargetAttributes = {
 					CC2F1DDE20C12920005BD750 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -156,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2F1DED20C12923005BD750 /* LaunchScreen.storyboard in Resources */,
 				CC2F1DEA20C12923005BD750 /* Assets.xcassets in Resources */,
 				CC2F1DE820C12921005BD750 /* Main.storyboard in Resources */,
 				CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */,
@@ -174,8 +193,10 @@
 				CC2F1DF620C1294D005BD750 /* FileLineReader.swift in Sources */,
 				CCE0F0EF20EF7BA100BF2641 /* RemoveDup.swift in Sources */,
 				CCA7AEB8215DDC6E00BE323B /* Appversion.swift in Sources */,
+				CC55885721A50FC30011D099 /* DynamicCellViewController.swift in Sources */,
 				CCDA98FB211346430093EABD /* ImageTransparent.swift in Sources */,
 				CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */,
+				CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */,
 				CC2F1DE320C12920005BD750 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,14 +210,6 @@
 				CC2F1DE720C12921005BD750 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CC2F1DEB20C12923005BD750 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC2F1DEC20C12923005BD750 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,14 +335,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BestPractise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.songgeb.bestpractise.BestPractise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,14 +353,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BestPractise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.songgeb.bestpractise.BestPractise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

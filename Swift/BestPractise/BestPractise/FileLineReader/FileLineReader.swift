@@ -27,7 +27,7 @@ class FileLineReader: NSObject, StreamDelegate {
     
     lineBlock = perLine
     self.completion = completion
-    inputStream?.schedule(in: RunLoop.current, forMode: .defaultRunLoopMode)
+    inputStream?.schedule(in: RunLoop.current, forMode: RunLoop.Mode.default)
     inputStream?.open()
   }
   
@@ -40,7 +40,7 @@ class FileLineReader: NSObject, StreamDelegate {
     case .endEncountered:
       completion?()
       inputStream?.close()
-      inputStream?.remove(from: RunLoop.current, forMode: .defaultRunLoopMode)
+      inputStream?.remove(from: RunLoop.current, forMode: RunLoop.Mode.default)
       inputStream = nil
       lineBlock = nil
       completion = nil
