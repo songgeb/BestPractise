@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var fileLineReader: FileLineReader?
-    private var dataModels = ["FilelineReader", "RemoveDump", "ImageTransparent", "AppVersion", "DynamicCollectionViewCell-Programing", "DynamicCollectionViewCell-Storyboard"]
+    private var dataModels = ["FilelineReader", "RemoveDump", "ImageTransparent", "AppVersion", "DynamicCollectionViewCell-Programing", "DynamicCollectionViewCell-Storyboard", "滚动字幕"]
 }
 
 extension ViewController: UITableViewDataSource {
@@ -49,6 +49,9 @@ extension ViewController: UITableViewDelegate {
             gotoDynamicCollectionViewTest(false)
         } else if dataIndex == 5 {
             gotoDynamicCollectionViewTest(true)
+        } else if dataIndex == 6 {
+            let vc = WheelViewController()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

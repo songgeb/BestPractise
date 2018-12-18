@@ -37,3 +37,11 @@ fileLineReader.readLine(perLine: { (lineNumber, content) in
 ### isNewVersionUser()
 
 判断是否是新版本新安装的用户，而不是升级上来的用户。且从当前新安装app后，直到更新新版本该方法都返回true
+
+### 滚动字幕
+
+![](Resources/rolling.gif)
+
+#### Feature
+1. 支持frame和autolayout布局
+2. 支持动态修改字体、颜色、文案等属性

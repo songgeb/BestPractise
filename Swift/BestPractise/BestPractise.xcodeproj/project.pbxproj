@@ -14,6 +14,8 @@
 		CC2F1DEA20C12923005BD750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DE920C12923005BD750 /* Assets.xcassets */; };
 		CC2F1DF620C1294D005BD750 /* FileLineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F1DF520C1294D005BD750 /* FileLineReader.swift */; };
 		CC2F1DFA20C12B99005BD750 /* BigFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC2F1DF920C12B99005BD750 /* BigFile.txt */; };
+		CC32C4E121C8CD7500C53F6F /* RollingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32C4E021C8CD7500C53F6F /* RollingTitleView.swift */; };
+		CC32C4E321C8CD9E00C53F6F /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32C4E221C8CD9E00C53F6F /* WheelViewController.swift */; };
 		CC55885721A50FC30011D099 /* DynamicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885621A50FC30011D099 /* DynamicCellViewController.swift */; };
 		CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */; };
 		CC55885B21A537FA0011D099 /* DyCollectionCellProgramingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55885A21A537FA0011D099 /* DyCollectionCellProgramingVC.swift */; };
@@ -32,6 +34,8 @@
 		CC2F1DEE20C12923005BD750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2F1DF520C1294D005BD750 /* FileLineReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLineReader.swift; sourceTree = "<group>"; };
 		CC2F1DF920C12B99005BD750 /* BigFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigFile.txt; sourceTree = "<group>"; };
+		CC32C4E021C8CD7500C53F6F /* RollingTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingTitleView.swift; sourceTree = "<group>"; };
+		CC32C4E221C8CD9E00C53F6F /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
 		CC55885621A50FC30011D099 /* DynamicCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellViewController.swift; sourceTree = "<group>"; };
 		CC55885821A511550011D099 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC55885A21A537FA0011D099 /* DyCollectionCellProgramingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyCollectionCellProgramingVC.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		CC2F1DE120C12920005BD750 /* BestPractise */ = {
 			isa = PBXGroup;
 			children = (
+				CC32C4DF21C8CD1000C53F6F /* Wheels */,
 				CC55885521A50A270011D099 /* DynamicCollectionViewCell */,
 				CC55885421A50A090011D099 /* AppVersion */,
 				CCDA98F92113461C0093EABD /* ImageProcessing */,
@@ -92,6 +97,15 @@
 				CC169EE820DB75050077D48A /* test.txt */,
 			);
 			path = FileLineReader;
+			sourceTree = "<group>";
+		};
+		CC32C4DF21C8CD1000C53F6F /* Wheels */ = {
+			isa = PBXGroup;
+			children = (
+				CC32C4E021C8CD7500C53F6F /* RollingTitleView.swift */,
+				CC32C4E221C8CD9E00C53F6F /* WheelViewController.swift */,
+			);
+			path = Wheels;
 			sourceTree = "<group>";
 		};
 		CC55885421A50A090011D099 /* AppVersion */ = {
@@ -201,6 +215,8 @@
 				CC2F1DE520C12921005BD750 /* ViewController.swift in Sources */,
 				CC55885B21A537FA0011D099 /* DyCollectionCellProgramingVC.swift in Sources */,
 				CC55885921A511560011D099 /* DynamicCollectionViewCell.swift in Sources */,
+				CC32C4E121C8CD7500C53F6F /* RollingTitleView.swift in Sources */,
+				CC32C4E321C8CD9E00C53F6F /* WheelViewController.swift in Sources */,
 				CC2F1DE320C12920005BD750 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
