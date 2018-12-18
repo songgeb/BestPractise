@@ -9,7 +9,7 @@
 import UIKit
 
 /// 垂直方向滚动字幕
-class RollingView: UIView {
+class RollingTitleView: UIView {
     //public
     
     ///动态设置font

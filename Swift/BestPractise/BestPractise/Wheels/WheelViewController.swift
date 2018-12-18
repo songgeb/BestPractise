@@ -19,11 +19,13 @@ class WheelViewController: UIViewController {
     
     private func setupRollingView() {
         let titles = ["当灰烬查封了凝霜的屋檐", "当车菊草化作深秋的露水", "我用固执的枯藤做成行囊", "走向了那布满荆棘的他乡"]
-        let rollingView = RollingView()
+        let rollingView = RollingTitleView()
         rollingView.backgroundColor = .lightGray
         rollingView.titles = titles
         rollingView.rollingInterval = 2
-        
+        rollingView.clickHandler = { index in
+            print(index)
+        }
         view.addSubview(rollingView)
         rollingView.translatesAutoresizingMaskIntoConstraints = false
         let views = ["rollingView": rollingView]
